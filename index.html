@@ -12,36 +12,33 @@
 	<!-- Include Modernizr in the head, before any other Javascript -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 
-  <!-- All Javascript at the bottom of the page for faster page loading -->
 
-	<!-- First try for the online version of jQuery-->
-	<script src="http://code.jquery.com/jquery.js"></script>
-
-	<!-- If no online access, fallback to our hardcoded version of jQuery -->
-	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
-
-	<!-- Bootstrap JS -->
-	<script src="bootstrap/js/bootstrap.min.js"></script>
-
-	<!-- Custom JS -->
-	<script src="js/script.js"></script>
 </head>
 <body>
   <div class="container-fluid" id="main">
-    <div class="navbar navbar-fixed-top" id="header">
-      <a href="/" class="navbar-brand">
-        <span id="logo">Foodie</span>
-      </a>
-      <button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-			</button>
+    <div class="navbar navbar-default navbar-fixed-top" id="header">
+			<div class="navbar-header">
+	      <a href="/" class="navbar-brand">
+	        <span class="logo">Foodie</span>
+	      </a>
+				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+				</button>
+				<center>
+				<a href="/" class="navbar-brand" id="small-logo">
+					<span class="logo">Foodie</span>
+				</a>
+				</center>
+			</div>
+
+
 			<a href="#" id="cart" class="pull-right">
-          <img src="images/cart.jpg" alt="cart">
-      </a>
-      <div class="nav-collapse collapse navbar-responsive-collapse">
-        <ul class="nav navbar-nav pull-right">
+					<img src="images/cart.jpg" alt="cart">
+			</a>
+      <div class="navbar-collapse collapse navbar-responsive-collapse pull-right">
+        <ul class="nav navbar-nav">
           <li class="active">
             <a href="/">Home</a>
           </li>
@@ -49,7 +46,7 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <strong class="caret"></strong></a>
             <ul class="dropdown-menu">
               <li class="dropdown-header">We serve at</li>
-              <li><a href="#">Bangalore</a></li>
+              <li><a href="menu.html">Bangalore</a></li>
               <li><a href="#">Hyderabad</a></li>
               <li><a href="#">Delhi</a></li>
               <li><a href="#">Pune</a></li>
@@ -58,17 +55,26 @@
           <li>
             <a href="#">Gallery</a>
           </li>
-          <li>
+          <li class="more-expanded">
             <a href="#">Reviews</a>
           </li>
-          <li>
+          <li class="more-expanded">
             <a href="#">Blog</a>
           </li>
-          <li>
+          <li class="more-expanded">
             <a href="#">About Us</a>
           </li>
+					<li class="more-hidden dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">More <strong class="caret"></strong></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Reviews</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">About Us</a></li>
+            </ul>
+					</li>
         </ul>
       </div>
+
     </div>
 		<!-- Indicators -->
 
@@ -81,8 +87,8 @@
 			<div class="carousel-inner">
 				<div class="item active" id="slide1">
 					<div class="carousel-caption">
-						<!-- <h4>We got your food You got our site</h4>
-						<p>A one stop destination for all your food</p> -->
+						<h4>We got your food You got our site</h4>
+						<p>A one stop destination for all your food</p>
 					</div>
 				</div>
 				<div class="item" id="slide2">
@@ -102,47 +108,99 @@
 			<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
 		</div>
 		<div class="container" id="features">
-			<div class="row well">
+			<div class="row well" id="select">
 				<div class="col-sm-7">
-					<h3>It is all about choices</h3>
+					<h1>It is all about choices</h1>
 					<p>With a tap of a finger, you can order food from restaurants around you.</p>
 				</div>
 				<div class="col-sm-5">
-					<img id="select" src="images/select.gif" alt="Lots to select from">
+					<img src="images/select.gif" alt="Lots to select from">
 				</div>
 			</div>
-
-			<div class="row well">
+			<div class="row well" id="delivery">
 				<div class="col-sm-5">
-					<img id="delivery" src="images/delivery.gif" alt="">
+					<img src="images/delivery.gif" alt="Fast Delivery">
 				</div>
 				<div class="col-sm-7">
-					<h3>Ligtening fast deliveries</h3>
+					<h1>Ligtening fast deliveries</h1>
 					<p>We like to keep you in the loop. We enable you to track your order, preparation and dispatch time.</p>
 				</div>
 			</div>
 
-			<div class="row well">
+			<div class="row well" id="personalised">
 				<div class="col-sm-7">
-					<h3>We are Smart for serving you better</h3>
+					<h1>We are Smart for serving you better</h1>
 					<p>We know exactly what you want and recommend curated dishes based on your past orders and filters.</p>
 				</div>
 				<div class="col-sm-5">
-					<img id="select" src="images/select.gif" alt="Lots to select from">
+					<img src="images/personalised.gif" alt="Personal to your tastes">
 				</div>
 			</div>
 
-			<div class="row well">
-				<div class="col-sm-5">
-					<img id="select" src="images/select.gif" alt="Lots to select from">
+			<div class="row well" id="simple">
+				<div class="col-sm-4">
+					<img src="images/simple.gif" alt="Simply simple">
 				</div>
-				<div class="col-sm-7">
-					<h3>Well, we are Simple so is our site</h3>
+				<div class="col-sm-8">
+					<h1>Well, we are Simple so is our site</h1>
 					<p>So with just a tap, we'll have your favourite meals delivered to you, in a fuss-free way.</p>
 				</div>
 			</div>
 
   	</div>
 	</div>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3 col-xs-6">
+					<ul>
+						<li><a href="/"><h1 class="logo">Foodie</h1></a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Carrers</a></li>
+						<li><a href="#">Blog</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3 col-xs-6">
+					<ul>
+						<li><h5>We serve at</h5></li>
+						<li><a href="#">Bangalore</a></li>
+						<li><a href="#">Hyderabad</a></li>
+						<li><a href="#">Delhi</a></li>
+						<li><a href="#">Pune</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3 follow col-xs-6">
+					<h5>Follow us at</h5>
+					<ul>
+						<li><a href="#"><img src="images/facebook-32.png" alt="facebook"></a></li>
+						<li><a href="#"><img src="images/twitter-32.png" alt="Twitter"></a></li>
+						<li><a href="#"><img src="images/youtube-32.png" alt="Youtube"></a></li>
+						<li><a href="#"><img src="images/google_plus-32.png" alt="Instagram"></a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3 col-xs-6">
+				<ul>
+					<li><h5>HeadQuarters</h5></li>
+					<li>Koramanagala</li>
+					<li>Bangalore<br><br></li>
+
+					<li>Phone no: 9123251343</li>
+					<li>Email: prateekreddyy@gmail.com</li>
+				</ul>
+				</div>
+				<!-- <div class="col-sm-2">
+
+				</div> -->
+			</div>
+		</div>
+	</footer>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.11.3.min.js"><\/script>')</script>
+
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="js/script.js"></script>
+
 </body>
 </html>

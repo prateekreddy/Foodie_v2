@@ -5,9 +5,11 @@
 
 #main{
   background-color: #F7F5EE;
+  padding: 0px;
+  margin-top: 100px;
 }
 
-#logo{
+.logo{
   font-family: PoiretOne,cursive;
   color: black;
   font-size: 51px;
@@ -17,35 +19,55 @@
 #header{
   background-color: white;
   border-bottom: 1px solid green;
+  min-width: 280px;
 }
+
+/*#header .navbar-header{
+  display: inline-block;
+}*/
 
 #header .navbar-brand{
   padding: 29px 15px 25px;
-  border-right: 1px solid green;
+  /*border-right: 1px solid green;*/
+}
+
+#small-logo{
+  display: none;
 }
 
 #header .nav li{
-  margin: 18px;
+  margin: 15px;
   font-size: 15px;
 }
 
 #cart{
   padding: 28.5px;
-  border-left: 1px solid green;
+  /*border-left: 1px solid green;*/
 }
 
 .dropdown-menu li{
   margin: 0 !important;
 }
 
+.more-hidden{
+  display: none !important;
+}
 
+.navbar-toggle{
+  top: 18px;
+  left: 15px;
+}
+
+.navbar-brand{
+  display: inline-block;
+}
 /* --------------------------------------
    Carousel
    -------------------------------------- */
 
 
 #myCarousel {
-	margin-top: 100px;
+	margin-top: 90px;
 }
 
 .carousel-caption {
@@ -61,7 +83,7 @@
 }
 
 #slide1 {
-	background: url('../images/diwali.jpg') top center no-repeat;
+	background: url('../images/hero2.jpg') top center no-repeat;
 }
 
 #slide2 {
@@ -78,43 +100,237 @@
 #features .well{
   background-color: white;
   border-radius: 20px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+#features p{
+  font-size: 17px;
+}
+
+#features h1{
+  font-weight: bolder;
+  font-size: 28px;
+  padding: 12px 0px;
+}
+
+#select{
+  margin-top: 20px;
+}
+
+
+
+/*#select img{
+  width: 210px;
+}*/
+
 #features .col-sm-7{
+  height: 240px;
+  padding-top: 50px;
   text-align: center;
+}
+
+#features .col-sm-8{
+  height: 240px;
+  padding-top: 35px;
+  text-align: center;
+}
+
+#delivery img{
+  max-width: 120%;
+}
+
+#personalised img{
+  height: 260px;
+  width: 110px;
+}
+
+#simple img{
+  width: 100px;
+}
+
+/*#simple, #delivery, #personalised, #select .grid_7{
+  height: 300px;
+}*/
+
+#simple img, #delivery img, #personalised img, #select img{
+  display: block;
+  margin: auto;
+  max-width: 110%;
+}
+
+
+#menu .well img{
+  width: 100%;
+  height: auto;
+}
+
+#menu .well{
+  padding: 10px;
+  margin: 0.5%;
+  background-color: white;
+  position: relative;
+  display: block;
+}
+
+
+#menu .item{
+  padding: 0px 5px 20px;
+}
+
+
+#menu .row{
+  overflow: hidden;
+  display: flex;
+}
+
+
+
+
+
+footer{
+  background-color: #363636;
+  color: white;
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer .follow h5{
+  margin-left: 55px;
+}
+
+footer .follow li{
+  display: inline-block;
+}
+
+footer .follow img{
+  padding: 7px;
+}
+
+footer .logo{
+  color: white;
+  padding: 20px 0px;
+}
+
+footer h5{
+  padding: 60px 0px 20px;
+  font-size: 20px;
+  color: #DDD;
+  font-weight: 600;
+}
+
+footer a,a:hover,a:focus{
+  color: #CCC;
+  text-decoration: none;
+  outline: none;
+  font-size:15px;
+}
+
+footer a:hover{
+  color: #EEE;
 }
 
 /*@grid-float-breakpoint:  @screen-md-min;
 @grid-float-breakpoint-max: (@grid-float-breakpoint - 1);*/
 
 
-@media  (max-width: 970px) {
-   .nav-collapse.collapse {
+@media  (min-width: 768px) and (max-width: 955px) {
+   /*.nav-collapse.collapse {
        display: none !important;
-   }
+   }*/
 
-   .navbar-toggle{
-     display: inline-block;
-     top:25px;
-     left:50%;
-   }
-   .navbar-brand{
-     display: inline-block;
-   }
+  .more-expanded{
+    display: none !important;
+  }
+
+  .more-hidden{
+    display: block !important;
+  }
+
 }
 
-@media  (min-width: 768px) {
+@media  (max-width: 768px) {
+  #features .col-sm-7{
+    padding-top: 10px;
+  }
+
+  .navbar-brand{
+    display: none;
+  }
+
+  #small-logo{
+    position: fixed;
+    float: none;
+    display: inherit;
+    /*left: 39%;*/
+    width: 100%;
+    text-align: center;
+    height: 0;
+    padding: 0 !important;
+  }
+
+  #small-logo span{
+    position: relative;;
+    top: 30px;
+  }
+
   .navbar-toggle{
-    position: absolute !important;
+    position: absolute;
+  }
+
+  .navbar-collapse{
+    width: 100%;
   }
 }
 
-@media  (max-width: 430px) {
+@media  (max-width: 687px) {
+  #menu .row{
+    display: none !important;
+  }
+
+  #menu .mobile-row{
+    display: flex !important;
+  }
+}
+
+@media  (max-width: 450px) {
   .navbar-brand{
     padding: 32px 15px 28px !important;
   }
 
-  #logo{
-    font-size: 35px;
+  .logo{
+    /*font-size: 35px;*/
+  }
+
+  #simple .col-sm-8{
+    height: 280px;
+    padding-top: 10px;
+  }
+
+  #features .col-sm-7{
+    height: 275px;
+  }
+
+  #personalised .col-sm-7{
+    height: 315px ;
+  }
+
+  footer .follow img{
+    padding: 3px;
   }
 }
+
+/*@media  (min-width: 889px) and (max-width: 1074px){
+  #menu .item{
+    height: 525px;
+  }
+}
+
+@media  (max-width: 889px){
+  #menu .item{
+    height: 560px;
+  }
+}*/
