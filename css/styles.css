@@ -6,7 +6,6 @@
 #main{
   background-color: #F7F5EE;
   padding: 0px;
-  margin-top: 100px;
 }
 
 .logo{
@@ -22,13 +21,8 @@
   min-width: 280px;
 }
 
-/*#header .navbar-header{
-  display: inline-block;
-}*/
-
 #header .navbar-brand{
   padding: 29px 15px 25px;
-  /*border-right: 1px solid green;*/
 }
 
 #small-logo{
@@ -42,7 +36,6 @@
 
 #cart{
   padding: 28.5px;
-  /*border-left: 1px solid green;*/
 }
 
 .dropdown-menu li{
@@ -64,8 +57,6 @@
 /* --------------------------------------
    Carousel
    -------------------------------------- */
-
-
 #myCarousel {
 	margin-top: 90px;
 }
@@ -79,23 +70,23 @@
 }
 
 #myCarousel .item {
-	height: 560px;
+	height: 600px;
 }
 
 #slide1 {
 	background: url('../images/hero2.jpg') top center no-repeat;
+  background-size: cover;
 }
 
 #slide2 {
 	background: url('../images/hero1.jpg') top center no-repeat;
+  background-size: cover;
 }
 
 #slide3 {
 	background: url('../images/hero.jpg') top center no-repeat;
+  background-size: cover;
 }
-
-
-
 
 #features .well{
   background-color: white;
@@ -119,11 +110,9 @@
   margin-top: 20px;
 }
 
-
-
-/*#select img{
-  width: 210px;
-}*/
+#menu .item:hover > .well{
+  border: 1px solid green;
+}
 
 #features .col-sm-7{
   height: 240px;
@@ -150,20 +139,23 @@
   width: 100px;
 }
 
-/*#simple, #delivery, #personalised, #select .grid_7{
-  height: 300px;
-}*/
-
 #simple img, #delivery img, #personalised img, #select img{
   display: block;
   margin: auto;
   max-width: 110%;
 }
 
-
 #menu .well img{
   width: 100%;
   height: auto;
+}
+
+#menu .well h3{
+  text-align: center;
+}
+
+#menu .well p{
+  text-align: justify;
 }
 
 #menu .well{
@@ -174,19 +166,13 @@
   display: block;
 }
 
-
 #menu .item{
   padding: 0px 5px 20px;
 }
 
-
-#menu .row{
-  overflow: hidden;
-  display: flex;
+#menu{
+  margin-top: 100px;
 }
-
-
-
 
 
 footer{
@@ -236,11 +222,7 @@ footer a:hover{
 /*@grid-float-breakpoint:  @screen-md-min;
 @grid-float-breakpoint-max: (@grid-float-breakpoint - 1);*/
 
-
 @media  (min-width: 768px) and (max-width: 955px) {
-   /*.nav-collapse.collapse {
-       display: none !important;
-   }*/
 
   .more-expanded{
     display: none !important;
@@ -261,11 +243,20 @@ footer a:hover{
     display: none;
   }
 
+  #menu .col-xs-12{
+    width: 66%;
+    margin: 0 18%;
+  }
+
+  #menu .col-xs-12 img{
+    width: 80%;
+    margin: 0 10%;
+  }
+
   #small-logo{
     position: fixed;
     float: none;
     display: inherit;
-    /*left: 39%;*/
     width: 100%;
     text-align: center;
     height: 0;
@@ -286,23 +277,9 @@ footer a:hover{
   }
 }
 
-@media  (max-width: 687px) {
-  #menu .row{
-    display: none !important;
-  }
-
-  #menu .mobile-row{
-    display: flex !important;
-  }
-}
-
 @media  (max-width: 450px) {
   .navbar-brand{
     padding: 32px 15px 28px !important;
-  }
-
-  .logo{
-    /*font-size: 35px;*/
   }
 
   #simple .col-sm-8{
@@ -322,15 +299,3 @@ footer a:hover{
     padding: 3px;
   }
 }
-
-/*@media  (min-width: 889px) and (max-width: 1074px){
-  #menu .item{
-    height: 525px;
-  }
-}
-
-@media  (max-width: 889px){
-  #menu .item{
-    height: 560px;
-  }
-}*/

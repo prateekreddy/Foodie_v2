@@ -12,7 +12,6 @@
 	<!-- Include Modernizr in the head, before any other Javascript -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
 
-
 </head>
 <body>
   <div class="container-fluid" id="main">
@@ -20,28 +19,26 @@
 			<div class="navbar-header">
 	      <a href="/" class="navbar-brand">
 	        <span class="logo">Foodie</span>
-	      </a>
+	      </a><!-- end navbar-brand -->
 				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-				</button>
-				<center>
+				</button><!-- end navbar-toggle -->
 				<a href="/" class="navbar-brand" id="small-logo">
 					<span class="logo">Foodie</span>
-				</a>
-				</center>
-			</div>
+				</a><!-- end navbar-brand -->
+			</div><!-- End navbar-header -->
 
 
-			<a href="#" id="cart" class="pull-right">
-					<img src="images/cart.jpg" alt="cart">
-			</a>
+			<a href="#myModal" id="cart" role="button" class="btn pull-right" data-toggle="modal">
+        <img src="images/cart.jpg" alt="cart">
+      </a><!-- end cart -->
       <div class="navbar-collapse collapse navbar-responsive-collapse pull-right">
         <ul class="nav navbar-nav">
           <li class="active">
             <a href="/">Home</a>
-          </li>
+          </li><!-- active -->
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <strong class="caret"></strong></a>
             <ul class="dropdown-menu">
@@ -50,105 +47,122 @@
               <li><a href="#">Hyderabad</a></li>
               <li><a href="#">Delhi</a></li>
               <li><a href="#">Pune</a></li>
-            </ul>
-          </li>
+            </ul><!-- end dropdown-menu -->
+          </li><!-- end dropdown -->
           <li>
             <a href="#">Gallery</a>
           </li>
           <li class="more-expanded">
             <a href="#">Reviews</a>
-          </li>
+          </li><!-- end more-expanded -->
           <li class="more-expanded">
             <a href="#">Blog</a>
-          </li>
+          </li><!-- end more-expanded -->
           <li class="more-expanded">
             <a href="#">About Us</a>
-          </li>
+          </li><!-- end more-expanded -->
 					<li class="more-hidden dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">More <strong class="caret"></strong></a>
             <ul class="dropdown-menu">
               <li><a href="#">Reviews</a></li>
               <li><a href="#">Blog</a></li>
               <li><a href="#">About Us</a></li>
-            </ul>
-					</li>
-        </ul>
-      </div>
-
-    </div>
+            </ul><!-- end dropdown-menu -->
+					</li><!-- end more-hidden -->
+        </ul><!-- end nav -->
+      </div><!-- End navbar-collapse -->
+    </div><!-- End navbar -->
 		<!-- Indicators -->
-
 		<div class="carousel slide" id="myCarousel">
 			<ol class="carousel-indicators">
 				<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
 				<li data-slide-to="1" data-target="#myCarousel"></li>
 				<li data-slide-to="2" data-target="#myCarousel"></li>
-			</ol>
+			</ol><!-- end carousel-indicators -->
 			<div class="carousel-inner">
 				<div class="item active" id="slide1">
 					<div class="carousel-caption">
 						<h4>We got your food You got our site</h4>
 						<p>A one stop destination for all your food</p>
-					</div>
-				</div>
+					</div><!-- end carousel-caption -->
+				</div><!-- End slide1 -->
 				<div class="item" id="slide2">
 					<div class="carousel-caption">
-						<h4>We got your food You got our site</h4>
-						<p>A one stop destination for all your food</p>
-					</div>
-				</div>
+						<h4>Celebrate Diwali with Foodie</h4>
+						<p></p>
+					</div><!-- end carousel-caption -->
+				</div><!-- End slide2 -->
 				<div class="item" id="slide3">
 					<div class="carousel-caption">
 						<h4>We got your food You got our site</h4>
 						<p>A one stop destination for all your food</p>
-					</div>
-				</div>
-			</div>
+					</div><!-- end carousel-caption -->
+				</div><!-- End slide3 -->
+			</div><!-- End carousel-inner -->
 			<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
 			<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
-		</div>
+		</div><!-- End Carousel -->
 		<div class="container" id="features">
 			<div class="row well" id="select">
 				<div class="col-sm-7">
 					<h1>It is all about choices</h1>
 					<p>With a tap of a finger, you can order food from restaurants around you.</p>
-				</div>
+				</div><!-- end col-sm-7 -->
 				<div class="col-sm-5">
 					<img src="images/select.gif" alt="Lots to select from">
-				</div>
-			</div>
+				</div><!-- end col-sm-5 -->
+			</div><!-- End select -->
 			<div class="row well" id="delivery">
 				<div class="col-sm-5">
 					<img src="images/delivery.gif" alt="Fast Delivery">
-				</div>
+				</div><!-- end col-sm-5 -->
 				<div class="col-sm-7">
 					<h1>Ligtening fast deliveries</h1>
 					<p>We like to keep you in the loop. We enable you to track your order, preparation and dispatch time.</p>
-				</div>
-			</div>
+				</div><!-- end col-sm-7 -->
+			</div><!-- End delivery -->
 
 			<div class="row well" id="personalised">
 				<div class="col-sm-7">
 					<h1>We are Smart for serving you better</h1>
 					<p>We know exactly what you want and recommend curated dishes based on your past orders and filters.</p>
-				</div>
+				</div><!-- end col-sm-7 -->
 				<div class="col-sm-5">
 					<img src="images/personalised.gif" alt="Personal to your tastes">
-				</div>
-			</div>
+				</div><!-- end col-sm-5 -->
+			</div><!-- End personalised -->
 
 			<div class="row well" id="simple">
 				<div class="col-sm-4">
 					<img src="images/simple.gif" alt="Simply simple">
-				</div>
+				</div><!-- end col-sm-4 -->
 				<div class="col-sm-8">
 					<h1>Well, we are Simple so is our site</h1>
 					<p>So with just a tap, we'll have your favourite meals delivered to you, in a fuss-free way.</p>
-				</div>
-			</div>
+				</div><!-- end col-sm-8 -->
+			</div><!-- End simple -->
 
-  	</div>
-	</div>
+  	</div><!-- End features -->
+	</div><!-- End main container-->
+
+	<div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Your Cart</h4>
+        </div><!-- end modal-header -->
+        <div class="modal-body">
+          <h4>Your Shopping cart is empty</h4>
+        </div><!-- end modal-body -->
+        <div class="modal-footer">
+          <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+          <button class="btn btn-primary disabled" type="button">Go to Payment</button>
+        </div><!-- end modal-footer -->
+      </div><!-- end modal-content -->
+    </div><!-- end modal-dialog -->
+  </div><!-- end myModal -->
+
 	<footer>
 		<div class="container">
 			<div class="row">
@@ -159,7 +173,7 @@
 						<li><a href="#">Carrers</a></li>
 						<li><a href="#">Blog</a></li>
 					</ul>
-				</div>
+				</div><!-- End column -->
 				<div class="col-sm-3 col-xs-6">
 					<ul>
 						<li><h5>We serve at</h5></li>
@@ -168,7 +182,7 @@
 						<li><a href="#">Delhi</a></li>
 						<li><a href="#">Pune</a></li>
 					</ul>
-				</div>
+				</div><!-- End column -->
 				<div class="col-sm-3 follow col-xs-6">
 					<h5>Follow us at</h5>
 					<ul>
@@ -177,7 +191,7 @@
 						<li><a href="#"><img src="images/youtube-32.png" alt="Youtube"></a></li>
 						<li><a href="#"><img src="images/google_plus-32.png" alt="Instagram"></a></li>
 					</ul>
-				</div>
+				</div><!-- End column -->
 				<div class="col-sm-3 col-xs-6">
 				<ul>
 					<li><h5>HeadQuarters</h5></li>
@@ -187,12 +201,10 @@
 					<li>Phone no: 9123251343</li>
 					<li>Email: prateekreddyy@gmail.com</li>
 				</ul>
-				</div>
-				<!-- <div class="col-sm-2">
+			</div><!-- End column -->
 
-				</div> -->
-			</div>
-		</div>
+			</div><!-- End row -->
+		</div><!-- End conatainer -->
 	</footer>
 	<script>window.jQuery || document.write('<script src="js/jquery-1.11.3.min.js"><\/script>')</script>
 
